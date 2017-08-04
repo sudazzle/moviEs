@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+$raleway: 'Raleway', sans-serif;
+$headerWidth: 100%;
+$headerVerticalPadding: 1%;
+$headerHorizontalPadding: 1.5%;
+$sidebarWidth: 20%;
+$logoDimention: 3rem;
+$headerBorderBottom: 0.3rem;
+$headerHeight: calc(#{$logoDimention} + #{$headerVerticalPadding}*2 + #{$headerBorderBottom};
+$sidbarHeight: calc(100% - #{$headerHeight});
+$sidebarPosition: $headerHeight;
+$bodyPadding: 1%;
+$bodyWidth: 100%;
+$posterWidth: 20%;

@@ -1,0 +1,23 @@
+@import 'Variables';
+
+.topHeader {
+	background: #36373a;
+	position: fixed;
+	width: $headerWidth;
+	z-index: 1;
+	padding: $headerVerticalPadding $headerHorizontalPadding;
+    border-bottom: $headerBorderBottom solid #a5a1a1;
+}
+
+.logo {
+	width: $logoDimention;
+	height: $logoDimention;
+	fill: #fff;
+	-webkit-transition: -webkit-transform 1.5s ease-in-out;
+	transition: transform 1.5s ease-in-out;
+	display: block;
+	&:hover {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}

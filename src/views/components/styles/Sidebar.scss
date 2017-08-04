@@ -1,0 +1,10 @@
+@import 'Variables';
+
+.sideBar {
+	width: $sidebarWidth;
+	height: $sidbarHeight;
+	background: #f2f2f2;
+	position: fixed;
+	top: $sidebarPosition;
+	box-shadow: 3px 0px 5px 1px #ccc
+}

@@ -1,0 +1,18 @@
+@import 'Variables';
+
+
+.rater {
+	stroke-width: 2;
+	stroke: #fff;
+	fill: none;
+}
+
+.raterNonHighlighted {
+	@extend .rater;
+	fill: none;
+}
+
+.raterHighlighted {
+	@extend .rater;
+	fill: #fff;
+}

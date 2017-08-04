@@ -1,0 +1,8 @@
+@import 'Variables';
+
+.appBody {
+	width: $bodyWidth;
+	padding-top: $headerHeight;
+	background: #36373a;
+	color: #fff;
+}
