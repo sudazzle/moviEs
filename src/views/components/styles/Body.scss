@@ -1,5 +1,7 @@
 @import 'Variables';
-
+body {
+	font-family: $raleway;
+}
 .appBody {
 	width: $bodyWidth;
 	padding-top: $headerHeight;

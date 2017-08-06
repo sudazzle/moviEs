@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import rootReducer from './reducers'
 import createLogger from 'redux-logger'
-import rootSaga from './sagas'
+import rootSaga from './rootSaga'
 
 const preloadedState = {}
 const loggerMiddleware = createLogger()

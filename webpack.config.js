@@ -16,7 +16,7 @@ module.exports = {
     // only- means to only hot reload for successful updates
 
 
-    './index.js'
+    './index.jsx'
     // the entry point of our app
   ],
   output: {
@@ -47,13 +47,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js|x$/,
         enforce: 'pre',
         loader: 'eslint-loader',
         exclude: /node_modules/
       },
       {
-        test: /\.js$/,
+        test: /\.js|x$/,
         use: [
           'babel-loader',
         ],
@@ -74,6 +74,10 @@ module.exports = {
           'svg-react-loader']
       }
     ],
+  },
+
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
 
   plugins: [

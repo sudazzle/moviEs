@@ -5,7 +5,7 @@ $headerVerticalPadding: 1%;
 $headerHorizontalPadding: 1.5%;
 $sidebarWidth: 20%;
 $logoDimention: 3rem;
-$headerBorderBottom: 0.3rem;
+$headerBorderBottom: 1px;
 $headerHeight: calc(#{$logoDimention} + #{$headerVerticalPadding}*2 + #{$headerBorderBottom};
 $sidbarHeight: calc(100% - #{$headerHeight});
 $sidebarPosition: $headerHeight;

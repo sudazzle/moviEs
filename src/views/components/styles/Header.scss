@@ -1,12 +1,11 @@
 @import 'Variables';
 
 .topHeader {
-	background: #36373a;
+	background: #0f2c32;
 	position: fixed;
 	width: $headerWidth;
 	z-index: 1;
 	padding: $headerVerticalPadding $headerHorizontalPadding;
-    border-bottom: $headerBorderBottom solid #a5a1a1;
 }
 
 .logo {
@@ -20,4 +19,13 @@
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
+}
+
+.listHeader {
+	padding: 0.8rem 1.5rem;
+	margin: 0;
+	background: #a04949;
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
 }

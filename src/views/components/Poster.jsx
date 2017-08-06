@@ -7,7 +7,7 @@ const Poster = (props) => (
 		<img src={`https://image.tmdb.org/t/p/w500${props.item.poster_path}`} alt={props.item.title} />
 		<div className={styles.overview}>
 			<h3>{props.item.title ? props.item.title : props.item.name}</h3>
-			<div className={styles.content}><Rater />{props.item.overview}</div>
+			<div className={styles.content}><Rater />{props.item.overview.substring(0, 200)}...</div>
 		</div>
 	</div>
 )

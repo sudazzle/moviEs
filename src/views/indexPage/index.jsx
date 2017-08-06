@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import Layout from '../components/Layout'
 import Poster from '../components/Poster'
 import { connect } from 'react-redux'
-import { incrementTest } from '../../data/actions/movies'
-// import { fetchTvPrograms } from '../../data/actions/tv'
+import { requestTopRatedMovies } from '../../data/actions/movies'
+import styles from '../components/styles/Header.scss'
+import { requestTopRatedTvProgram } from '../../data/actions/tv'
 
 
 class IndexPage extends Component {
@@ -12,22 +13,21 @@ class IndexPage extends Component {
 	}
 
 	componentDidMount() {
-		// fetchData();
 		const { dispatch } = this.props
-		dispatch(incrementTest())
-		// dispatch(fetchTvPrograms(5))
+		dispatch(requestTopRatedMovies())
+		dispatch(requestTopRatedTvProgram())
 	}
 
 	render() {
 		return (
 			<Layout>
-				<h2>Top Rated Movies</h2>
+				<h2 className={styles.listHeader}>Top Rated Movies</h2>
 				{
 					this.props.movies.list.map(item => {
 						return (<Poster item={item} />)
 					})
 				}
-				<h2>Top Rated TV Programs</h2>
+				<h2 className={styles.listHeader}>Top Rated TV Programs</h2>
 				{
 					this.props.tvPrograms.list.map(item => {
 						return (<Poster item={item} />)

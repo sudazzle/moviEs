@@ -2,6 +2,7 @@
 
 .poster {
 	width: $posterWidth;
+	height: 50vh;
 	float: left;
 	position: relative;
 	overflow: hidden;
@@ -14,7 +15,7 @@
 		font-family: $raleway;
 		width: 90%;
 		padding: 5%;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		color: #fff;
 		height: 100%;
 		.content, h3 {
