@@ -3,8 +3,14 @@ body {
 	font-family: $raleway;
 }
 .appBody {
-	width: $bodyWidth;
-	padding-top: $headerHeight;
-	background: #36373a;
+	width: calc(#{$bodyWidth} - #{$posterBorder}*2);
+	height: 100%;
+	background: $appBackground;
+	padding-left: $posterBorder;
+	padding-right: $posterBorder;
 	color: #fff;
+	float: left;
+	@media (min-width: $topHeaderBreakpointWidth) and (min-height: $topHeaderBreakpointHeight) {
+	    margin-top: 5.4rem;
+	}
 }

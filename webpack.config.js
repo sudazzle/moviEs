@@ -63,7 +63,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           'style-loader',
-          'css-loader?modules',
+          'css-loader?modules&localIdentName=[local]___[hash:base64:5]',
           'sass-loader',
         ],
       },

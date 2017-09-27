@@ -3,7 +3,7 @@ import Header from './Header'
 import Body from './Body'
 
 const Layout = (props) => (
-	<div>
+	<div id="outer-layout">
 		<Header />
 		<Body>{props.children}</Body> 
 	</div>

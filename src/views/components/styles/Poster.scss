@@ -1,14 +1,27 @@
 @import 'Variables';
 
 .poster {
-	width: $posterWidth;
-	height: 50vh;
-	float: left;
-	position: relative;
-	overflow: hidden;
+    width: calc(100% - #{$posterBorder}*2);
+    height: 60%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    border: $posterBorder solid $appBackground;
+    cursor: pointer;
 	img {
 		width: 100%;
 		float:left;
+	}
+	.posterTitle {
+		padding: 25px 15px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		background: rgba(71, 120, 152, 0.93);
+	    box-sizing: border-box;
+	    text-transform: uppercase;
 	}
 	.overview {
 		position: absolute;
@@ -32,5 +45,16 @@
 				height: auto;
 			}
 		}
+	}
+	@media (min-width: 530px) {
+    	width: calc(50% - #{$posterBorder}*2);
+	}
+
+	@media (min-width: 1020px) {
+    	width: calc(33.33% - #{$posterBorder}*2);
+	}
+
+	@media (min-width: 1440px) {
+    	width: calc(25% - #{$posterBorder}*2);
 	}
 }
